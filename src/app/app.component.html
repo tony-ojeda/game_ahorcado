@@ -6,13 +6,11 @@
 </div>
 <div calss="row">
     <div class="col text-center">
-        <h1>_ _ _ _ _ _ _</h1>
+        <h1>{{palabraOculta}}</h1>
     </div>
 </div>
 <div calss="row">
     <div class="col text-center">
-        <button class="btn btn-primary">A</button>
-        <button class="btn btn-primary">B</button>
-        <button class="btn btn-primary">C</button>
+        <button *ngFor="let letra of letras" class="btn btn-primary">{{letra}}</button>
     </div>
 </div>
